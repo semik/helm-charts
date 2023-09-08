@@ -1,19 +1,7 @@
-Bla bla
-
 ------------------------------ NOTES ------------------------------
 
-Release:
+Bla bla
 
-{{ .Release | toYaml}}
+{{ coalesce 0 1 2 }}
 
-Values:
-
-{{ .Values | toYaml}}
-
-Chart:
-
-{{ .Chart | toYaml}}
-
-Capabilities of K8S:
-
-{{ .Capabilities | toYaml }}
+{{ kebabcase "FirstName" }}
